@@ -2,6 +2,9 @@
 #define MEASUREMENTFAIL -126F  // functions will return -127 for an error
 #define N_MAX 10 // total number of measurements
 
+byte measurement_loop();
+byte measure_sensor(byte N);
+
 void setup() {
   // initialisation step
   Serial.begin(BAUDRATE)
